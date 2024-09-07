@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jissoho's Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a; /* Dark background */
+            color: white; /* White text */
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #333, #444);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00ff88; /* Green accent for hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 20px;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            background: #00ff88; /* Green button */
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background 0.4s ease, transform 0.4s ease;
+        }
+
+        .cta-button:hover {
+            background: #00d474; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background: #222; /* Darker section background */
+            color: white;
+            margin: 0;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #00ff88;
+            margin: 20px auto;
+            border-radius: 50px;
+        }
+
+        /* Icon Styling */
+        .icons i {
+            font-size: 4em;
+            margin: 15px;
+            color: #00ff88;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icons i:hover {
+            color: #00d474;
+            transform: translateY(-10px);
+        }
+
+        /* Project Gallery */
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            background: #333;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 30px;
+            width: 300px;
+            transition: transform 0.4s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Parallax Background */
+        .parallax {
+            background: url('parallax-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Jissoho's Portfolio</h1>
+            <p>Crafting beautiful and professional web experiences.</p>
+            <a href="#projects" class="cta-button">View Projects <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Jissoho, a web developer passionate about building clean and modern web solutions.</p>
+        <div class="icons">
+            <i class="fas fa-code"></i>
+            <i class="fas fa-cogs"></i>
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-gallery">
+            <div class="project">
+                <img src="Capture d'écran 2024-09-07 132718.png" alt="Project 1">
+                <h3>Netflixy</h3>
+                <p>A site dedicated to Tunisians who can get free Netflix accounts.</p>
+            </div>
+            <div class="project">
+                <img src="Capture d'écran 2024-09-07 132924.png" alt="Project 2">
+                <h3>Jelly's Space</h3>
+                <p>A site dedicated to custom Discord decorations.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jissoho. All rights reserved.</p>
+    </footer>
+</body>
+</html>
